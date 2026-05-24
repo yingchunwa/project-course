@@ -1,7 +1,7 @@
 @startuml system-architecture-current
 ' 中期汇报 - 系统总体架构(当前实际部署)
 ' 横版,简化文字,字号增大,适合 PPT 整页展示
-title 系统总体架构
+' (标题由幻灯片自身提供,puml 内不再渲染 title)
 
 skinparam defaultFontName "Microsoft YaHei"
 skinparam defaultFontSize 22
