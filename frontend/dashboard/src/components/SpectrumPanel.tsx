@@ -10,7 +10,7 @@ interface Props {
 }
 
 interface SensorBlock {
-  key: "accel" | "gyro" | "vision";
+  key: "accel" | "vision";
   label: string;
   axes: SpectrumAxis[];
   colors: string[];
@@ -22,12 +22,6 @@ const BLOCKS: SensorBlock[] = [
     label: "加速度计",
     axes: ["sensor_ax", "sensor_ay", "sensor_az"],
     colors: ["#1677ff", "#dc2626", "#16a34a"]
-  },
-  {
-    key: "gyro",
-    label: "陀螺仪",
-    axes: ["sensor_gx", "sensor_gy", "sensor_gz"],
-    colors: ["#0891b2", "#ca8a04", "#9333ea"]
   },
   {
     key: "vision",
@@ -183,7 +177,7 @@ const headerStyle: React.CSSProperties = {
 
 const gridStyle: React.CSSProperties = {
   display: "grid",
-  gridTemplateColumns: "repeat(3, minmax(0, 1fr))",
+  gridTemplateColumns: "repeat(2, minmax(0, 1fr))",
   gap: 10,
   flex: 1,
   minHeight: 0

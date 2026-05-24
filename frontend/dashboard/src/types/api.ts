@@ -79,10 +79,7 @@ export type SpectrumAxis =
   | "vision_dy"
   | "sensor_ax"
   | "sensor_ay"
-  | "sensor_az"
-  | "sensor_gx"
-  | "sensor_gy"
-  | "sensor_gz";
+  | "sensor_az";
 
 export interface WindowSpectraResponse {
   task_id: string;
@@ -92,9 +89,6 @@ export interface WindowSpectraResponse {
   sensor_ax: AxisSpectrum | null;
   sensor_ay: AxisSpectrum | null;
   sensor_az: AxisSpectrum | null;
-  sensor_gx: AxisSpectrum | null;
-  sensor_gy: AxisSpectrum | null;
-  sensor_gz: AxisSpectrum | null;
 }
 
 export interface DashboardOverview {
